@@ -1,0 +1,155 @@
+body {
+ 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+}
+a {
+    color:black;
+    text-decoration: none;
+    margin: 5px;
+}
+
+a :hover{
+
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headernav {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+ul a,ul img
+{
+    padding: 0 8px;
+}
+
+.headerimage:hover {
+    box-shadow: 0 0 20px 0 rgb(226, 174, 174);
+    cursor: pointer;
+    border-radius: 20px;
+    
+}
+section
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 450;
+    src: url(https://fonts.gstatic.com/s/productsa...) format('woff2');
+}
+
+h1 {
+ font-size: 5em;
+ font-family: Product Sans;
+}
+
+.my-input-container{
+
+    display:flex;
+    justify-content: space-between;
+    width: 580px;
+    height: 25px;
+    border-radius: 1em;
+    border:1px solid  rgb(233, 220, 220);
+}
+
+.my-input-container :hover{
+    box-shadow: 0 0 20px 0 rgb(233, 220, 220);
+}
+.my-input-container >input{
+
+    flex-grow: 2;
+    border:none;
+    outline:none;
+}
+.my-button-container {
+    padding-top: 40px;
+}
+
+button{
+    background-color: white;
+    border-radius: 5px;;
+    height:30px;
+    border: none;
+    color:black;
+    padding:0 20px;
+    margin: 0 4px;
+}
+button:hover{
+    cursor:pointer;
+    box-shadow: 0 0 10 0 gainsboro;
+}
+
+footer{
+    background-color: rgb(223, 215, 215);
+    bottom: 0px;
+    position:fixed;
+    width: 100vw; 
+}
+
+#footer-left{
+    display:flex;
+    justify-content: start;
+    padding-left: 20px;
+}
+
+#footer-right{
+    display:flex;
+    justify-content: flex-end;
+    padding-left: 20px;
+}
+
+@media (max-width:630px){
+
+    #footer.nav{
+        flex-direction:column;
+    }
+    #footer-left{
+        justify-content: center;
+    }
+    #footer-right{
+        justify-content: center;
+    }
+    .my-input-container{
+        width:95vw;
+    }
+} 
+@media (max-height:522px) {
+    body{
+        overflow-x:hidden ;
+
+    }
+    section{
+        margin-bottom:20px;
+    }
+    footer{
+        position:relative;
+    }
+}
+@media (max-height:570px and  max-width:630px ) {
+    body{
+        overflow-x:hidden ;
+
+    }
+    section{
+        margin-bottom:20px;
+    }
+    footer{
+        position:relative;
+    }
+}
